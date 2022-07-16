@@ -4,7 +4,7 @@ import {Notification} from "./Notification/Notification";
 import { FeedbackArea, ButtonGreen, ButtonRed, ButtonYellow } from "../FeedbackOptions/FeedbackOptions.styled";
 
 export const Statistics = ({ data }) => {
-    const { good, neutral, bad } = data;                // витягуємо значення змінних з об'єкту
+    const [ good, neutral, bad ] = data;                // витягуємо значення змінних з об'єкту
     const total = good + neutral + bad;                 // рахуємо загальну кількість кліків
     const positive = Math.round((good / total) * 100);  // рахуємо процент позитивних
 
