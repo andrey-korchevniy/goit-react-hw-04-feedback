@@ -18,16 +18,16 @@ export default function Section() {
         }
     };
 
-        return (
-            <Feedback>
-                <h2>Please leave your feedback</h2>
+    return (
+        <Feedback>
+            <h2>Please leave your feedback</h2>
 
-                {/* блок кнопок */}
-                <FeedbackOptions onLeaveFeedback={onLeaveFeedback} /> 
+            {/* блок кнопок */}
+            <FeedbackOptions onLeaveFeedback={onLeaveFeedback} /> 
 
-                {/* блок статистики */}
-                <Statistics data={[good, neutral, bad]} />
-            </Feedback>
-        )
-    }
+            {/* блок статистики */}
+            <Statistics data={[good, neutral, bad]} />
+        </Feedback>
+    )
+}
 
